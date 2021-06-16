@@ -2104,6 +2104,7 @@ function DiscordLib:Window(text)
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
 			    ):Play()
+								
 				TweenService:Create(
 				ChannelBtnTitle,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
