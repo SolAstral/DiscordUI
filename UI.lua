@@ -323,7 +323,6 @@ function DiscordLib:Window(text)
 
 	MinimizeBtn.MouseLeave:Connect(
 		function()
-			function()
 			TweenService:Create(
 			MinimizeBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
