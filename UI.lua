@@ -2086,13 +2086,13 @@ function DiscordLib:Window(text)
 				if currentchanneltoggled ~= ChannelBtn.Name then
 			    TweenService:Create(
 				ChannelBtn,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{BackgroundColor3 = Color3.fromRGB(52,55,60)}
 			    ):Play()
 			
 			    TweenService:Create(
 				ChannelBtnTitle,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{TextColor3 = Color3.fromRGB(220,221,222)}
 			    ):Play()
             end
@@ -2101,13 +2101,13 @@ function DiscordLib:Window(text)
 				if currentchanneltoggled ~= ChannelBtn.Name then
                 TweenService:Create(
 				ChannelBtn,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
 			    ):Play()
 				end
 				TweenService:Create(
 				ChannelBtnTitle,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{TextColor3 = Color3.fromRGB(114, 118, 125)}
 			    ):Play()
 			end)
@@ -2124,13 +2124,13 @@ function DiscordLib:Window(text)
 					if v.ClassName == "TextButton" then
 			    TweenService:Create(
 				v,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
 			    ):Play()
 			
 		        TweenService:Create(
 				v.ChannelBtnTitle,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{TextColor3 = Color3.fromRGB(255,255,255)}
 			    ):Play()
 					end
@@ -2139,12 +2139,12 @@ function DiscordLib:Window(text)
 				ChannelTitle.Text = text
 				TweenService:Create(
 			    ChannelBtn,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{BackgroundColor3 = Color3.fromRGB(57,60,67)}
 			    ):Play()
 				TweenService:Create(
 			    ChannelBtn,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, true),
 				{BackgroundColor3 = Color3.fromRGB(255,255,255)}
 			    ):Play()
 				currentchanneltoggled = ChannelBtn.Name
