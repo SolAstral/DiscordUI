@@ -2137,8 +2137,16 @@ function DiscordLib:Window(text)
 					ServerFrame.Visible = true
 				end
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				TweenService:Create(
+			    ChannelBtn,
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{BackgroundColor3 = Color3.fromRGB(57,60,67)}
+			    ):Play()
+				TweenService:Create(
+			    ChannelBtn,
+				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{BackgroundColor3 = Color3.fromRGB(255,255,255)}
+			    ):Play()
 				currentchanneltoggled = ChannelBtn.Name
 			end)
 			
