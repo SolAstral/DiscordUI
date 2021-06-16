@@ -2132,7 +2132,7 @@ function DiscordLib:Window(text)
 		        TweenService:Create(
 				v.ChannelBtnTitle,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{TextColor3 = Color3.fromRGB(255,255,255)}
+				{TextColor3 = Color3.fromRGB(114, 118, 125)}
 			    ):Play()
 					end
 					ServerFrame.Visible = true
