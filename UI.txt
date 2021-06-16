@@ -293,25 +293,42 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseEnter:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(240, 71, 71)
+		TweenService:Create(
+			CloseBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(240, 71, 71)}
+		):Play()
 		end
 	)
 
 	CloseBtn.MouseLeave:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+		TweenService:Create(
+			CloseBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(32, 34, 37)}
+		):Play()
 		end
 	)
 
 	MinimizeBtn.MouseEnter:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(40, 43, 46)
+			TweenService:Create(
+			MinimizeBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(40, 43, 46)}
+		):Play()
 		end
 	)
 
 	MinimizeBtn.MouseLeave:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			function()
+			TweenService:Create(
+			MinimizeBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(32, 34, 37)}
+		):Play()
 		end
 	)
 
