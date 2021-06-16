@@ -2144,9 +2144,9 @@ function DiscordLib:Window(text)
 				{BackgroundColor3 = Color3.fromRGB(57,60,67)}
 			    ):Play()
 				TweenService:Create(
-			    ChannelBtn,
+			    ChannelBtnTitle,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(255,255,255)}
+				{TextColor3 = Color3.fromRGB(255,255,255)}
 			    ):Play()
 				currentchanneltoggled = ChannelBtn.Name
 			end)
