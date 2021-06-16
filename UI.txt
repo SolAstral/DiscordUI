@@ -291,8 +291,7 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	CloseBtn.MouseEnter:Connect(
-		function()
+	CloseBtn.MouseEnter:Connect(function()
 		TweenService:Create(
 			CloseBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -301,8 +300,7 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	CloseBtn.MouseLeave:Connect(
-		function()
+	CloseBtn.MouseLeave:Connect(function()
 		TweenService:Create(
 			CloseBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -311,8 +309,7 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	MinimizeBtn.MouseEnter:Connect(
-		function()
+	MinimizeBtn.MouseEnter:Connect(function()
 			TweenService:Create(
 			MinimizeBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -321,8 +318,7 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	MinimizeBtn.MouseLeave:Connect(
-		function()
+	MinimizeBtn.MouseLeave:Connect(function()
 			TweenService:Create(
 			MinimizeBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
