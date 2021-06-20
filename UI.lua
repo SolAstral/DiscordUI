@@ -1553,7 +1553,7 @@ function DiscordLib:Window(text)
 		NotificationHolderMain.TextSize = 14.000
 		TweenService:Create(
 			NotificationHolderMain,
-			TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
+			TweenInfo.new(.6, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
 			{BackgroundTransparency = 0.2}
 		):Play()
 		
@@ -1571,7 +1571,7 @@ function DiscordLib:Window(text)
 		
 		TweenService:Create(
 			Notification,
-			TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			TweenInfo.new(.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 			{BackgroundTransparency = 0}
 		):Play()
 
@@ -1637,13 +1637,13 @@ function DiscordLib:Window(text)
 		AlrightBtn.MouseButton1Click:Connect(function()
 			TweenService:Create(
 				NotificationHolderMain,
-				TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundTransparency = 1}
 			):Play()
 			Notification:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 			TweenService:Create(
 				Notification,
-				TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundTransparency = 1}
 			):Play()
 			wait(.2)
@@ -1653,7 +1653,7 @@ function DiscordLib:Window(text)
 		AlrightBtn.MouseEnter:Connect(function()
 			TweenService:Create(
 				AlrightBtn,
-				TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundColor3 = Color3.fromRGB(103,123,196)}
 			):Play()
 		end)
@@ -1661,7 +1661,7 @@ function DiscordLib:Window(text)
 		AlrightBtn.MouseLeave:Connect(function()
 			TweenService:Create(
 				AlrightBtn,
-				TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 			):Play()
 		end)
