@@ -1567,11 +1567,11 @@ function DiscordLib:Window(text)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
 		Notification.BackgroundTransparency = 1
 		
-		Notification:TweenSize(UDim2.new(0, 346, 0, 176), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
+		Notification:TweenSize(UDim2.new(0, 346, 0, 176), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, 1, true)
 		
 		TweenService:Create(
 			Notification,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 			{BackgroundTransparency = 0}
 		):Play()
 
