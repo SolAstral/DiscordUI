@@ -884,7 +884,7 @@ function DiscordLib:Window(text)
 			):Play()
 			TweenService:Create(
 				NotificationHolder,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
 				{BackgroundTransparency = 1}
 			):Play()
 			wait(.2)
@@ -1553,7 +1553,7 @@ function DiscordLib:Window(text)
 		NotificationHolderMain.TextSize = 14.000
 		TweenService:Create(
 			NotificationHolderMain,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
 			{BackgroundTransparency = 0.2}
 		):Play()
 		
