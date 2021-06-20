@@ -720,7 +720,7 @@ function DiscordLib:Window(text)
 		NotificationHolder.Visible = true
 		TweenService:Create(
 			NotificationHolder,
-			TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
+			TweenInfo.new(1.4, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
 			{BackgroundTransparency = 0.2}
 		):Play()
 
